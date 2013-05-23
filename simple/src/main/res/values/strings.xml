@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" >Simple Dialer
+    </string>
+    <string name="action_settings" >Settings
+    </string>
+    <string name="edit_message">Enter a number
+    </string>
+    <string name="button_send">Check
+    </string>
+    <string name="title_activity_main">MainActivity
+    </string>
+    <string name="title_activity_display_message">Number
+    </string>
+    <string name="title_activity_message2">TROLLED
+    </string>
+    <string name="title_activity_call">CALL
+    </string>
+    <string name="Contactss">Contacts
+    </string>
+</resources>

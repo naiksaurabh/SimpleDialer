@@ -1,0 +1,18 @@
+# incremental data. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1368874633094 407 1ae9d308d026a85bab1a33d2ef322031b04a7dda C:\Documents and Settings\Sanket\AndroidStudioProjects\simple\simple\build\classes\debug\com\example\simple\R$drawable.class
+1369336308921 431 49ec2b92fbf4c82b8073bec69ba1d18e7a3a7dba C:\Documents and Settings\Sanket\AndroidStudioProjects\simple\simple\build\classes\debug\com\example\simple\R$style.class
+1369336308921 728 dc46066b467142134c21b309b4c1ead36b326d23 C:\Documents and Settings\Sanket\AndroidStudioProjects\simple\simple\build\classes\debug\com\example\simple\R$string.class
+1368874482422 484258 bd6479f5dd592790607e0504e66e0f31c2b4d308 C:\Documents and Settings\Sanket\AndroidStudioProjects\simple\simple\libs\android-support-v4.jar
+1369332592625 5134 dd8b0b9f23a2ac29bcdb8181907eb3c2aecd51b9 C:\Documents and Settings\Sanket\AndroidStudioProjects\simple\simple\build\classes\debug\com\example\simple\MainActivity.class
+1368874633094 461 9afd6973e93f305b89e3a11fd017ecb96a8e3b96 C:\Documents and Settings\Sanket\AndroidStudioProjects\simple\simple\build\classes\debug\com\example\simple\R$dimen.class
+1369336308921 467 12ca1c05431e362d3aa644e1301baaf22d3211d8 C:\Documents and Settings\Sanket\AndroidStudioProjects\simple\simple\build\classes\debug\com\example\simple\R$layout.class
+1369336308921 964 ff625d3a63fb2be91dfd194096f4a97fcf415f60 C:\Documents and Settings\Sanket\AndroidStudioProjects\simple\simple\build\classes\debug\com\example\simple\R$id.class
+1369336308921 388 7cfaad2ef6fbe5d7645b690bf62ab77eb3b4d563 C:\Documents and Settings\Sanket\AndroidStudioProjects\simple\simple\build\classes\debug\com\example\simple\R$menu.class
+1369219327703 952 4c2fa93ccf03bb3a41a552dacde4321a335fc572 C:\Documents and Settings\Sanket\AndroidStudioProjects\simple\simple\build\classes\debug\com\example\simple\DisplayMessage1Activity.class
+1368874633078 340 631ef999c7212a150ee11c535fe68c4c3325f893 C:\Documents and Settings\Sanket\AndroidStudioProjects\simple\simple\build\classes\debug\com\example\simple\R$attr.class
+1368874633141 345 1c3cec370a6ef2d641bc817f07eb5e027f56b94b C:\Documents and Settings\Sanket\AndroidStudioProjects\simple\simple\build\classes\debug\com\example\simple\BuildConfig.class
+1369336308921 677 a61f8baf4a47d06a830f593d2f9097e2135a6295 C:\Documents and Settings\Sanket\AndroidStudioProjects\simple\simple\build\classes\debug\com\example\simple\R.class
+1369301477968 1534 fd526109868e6cf2ee4097ae09acd38e9a59adfa C:\Documents and Settings\Sanket\AndroidStudioProjects\simple\simple\build\classes\debug\com\example\simple\MyContactsActivity.class
+1368944125468 1488 e2917201125feef2b3d8b6933812e8fedca26e67 C:\Documents and Settings\Sanket\AndroidStudioProjects\simple\simple\build\classes\debug\com\example\simple\DisplayMessageActivity.class
