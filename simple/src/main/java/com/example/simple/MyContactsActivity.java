@@ -30,7 +30,7 @@ public class MyContactsActivity extends MainActivity {
     public void copyit(View view) {
 
         ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
-        ClipData clip = ClipData.newPlainText("0", "9158554294");
+        ClipData clip = ClipData.newPlainText("0", "9423013242");
         clipboard.setPrimaryClip(clip);
         //Intent intent6;
         //intent6 = new Intent(this, MyContactsActivity.class);
