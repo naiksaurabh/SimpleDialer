@@ -15,7 +15,14 @@
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="9158554294"
+            android:text="9423013242"
             android:onClick="copyit"
             android:id="@+id/button" android:layout_gravity="center"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="**Pressing on the number copies number to clipboard
+            -works only on honeycomb and above"
+/>
 </LinearLayout>

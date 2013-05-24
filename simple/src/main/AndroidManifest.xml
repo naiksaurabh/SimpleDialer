@@ -41,7 +41,7 @@
         </activity>
         <activity
                 android:name="com.example.simple.MyContactsActivity"
-                android:label="@string/Contactss"
+                android:label="@string/Contacts"
                 android:parentActivityName="com.example.simple.MainActivity" >
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"

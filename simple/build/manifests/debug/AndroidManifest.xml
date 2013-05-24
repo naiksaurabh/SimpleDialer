@@ -17,7 +17,7 @@
         <activity android:label="@string/title_activity_message2" android:name="com.example.simple.DisplayMessage1Activity" android:parentActivityName="com.example.simple.MainActivity">
             <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.simple.MainActivity"/>
         </activity>
-        <activity android:label="@string/Contactss" android:name="com.example.simple.MyContactsActivity" android:parentActivityName="com.example.simple.MainActivity">
+        <activity android:label="@string/Contacts" android:name="com.example.simple.MyContactsActivity" android:parentActivityName="com.example.simple.MainActivity">
             <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.simple.MainActivity"/>
         </activity>
 
