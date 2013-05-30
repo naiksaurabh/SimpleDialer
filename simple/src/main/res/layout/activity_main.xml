@@ -5,8 +5,8 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:background="@color/abs__background_holo_dark" android:fillViewport="true" android:focusable="false"
-            android:focusableInTouchMode="false" style="@android:style/Holo.Light.ButtonBar"
-            tools:context=".MyContactsActivity">
+            android:focusableInTouchMode="false"
+          >
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
@@ -174,10 +174,7 @@
                       android:orientation="horizontal"
                       android:layout_width="fill_parent"
                       android:layout_height="wrap_content"
-                ><![CDATA[
-
-            />
-            ]]>
+                >
             <Button
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"

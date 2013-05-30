@@ -146,8 +146,12 @@ public class MainActivity extends SherlockActivity implements OnClickListener
         text.setText(add);
     }
     public void cancel(View view) {   EditText text = (EditText) findViewById(R.id.edit_message);
+        if(add.equals(""))
+        {;}
+        else
+        {
         add=add.substring(0,add.length()-1);
-        text.setText(add);
+        text.setText(add);}
     }
 
     }
