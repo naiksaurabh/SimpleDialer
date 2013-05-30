@@ -2,15 +2,15 @@ package com.example.simple;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.app.Activity;
-import android.view.Menu;
-import android.view.MenuInflater;
+import com.actionbarsherlock.app.SherlockActivity;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
 import android.view.View;
 import android.widget.EditText;
 import android.view.View.OnClickListener;
 import android.net.Uri;
 
-public class MainActivity extends Activity implements OnClickListener
+public class MainActivity extends SherlockActivity implements OnClickListener
 {
     public final static String EXTRA_MESSAGE = "com.example.simple.MESSAGE";
 
@@ -24,9 +24,11 @@ public class MainActivity extends Activity implements OnClickListener
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
+        MenuInflater inflater = getSupportMenuInflater();
+        inflater.inflate(R.menu.main, menu);
         return true;
     }
+
 
     /** Called when the user clicks the Send button */
     public void sendMessage(View view) {

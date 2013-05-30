@@ -1,9 +1,8 @@
 package com.example.simple;
 
-import android.content.Intent;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
 import android.os.Bundle;
-import android.support.v4.app.NavUtils;
-import android.view.MenuItem;
 import android.view.View;
 import android.content.ClipboardManager;
 import android.content.ClipData;
@@ -18,14 +17,10 @@ public class MyContactsActivity extends MainActivity {
     setContentView(R.layout.message2);
 }
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                NavUtils.navigateUpFromSameTask(this);
-                return true;
-        }
-        return super.onOptionsItemSelected(item);
-
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getSupportMenuInflater();
+        inflater.inflate(R.menu.main, menu);
+        return true;
     }
     public void copyit(View view) {
 
