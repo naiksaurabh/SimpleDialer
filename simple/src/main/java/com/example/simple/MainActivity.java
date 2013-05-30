@@ -1,14 +1,21 @@
 package com.example.simple;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
+
+import android.provider.ContactsContract;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.view.View.OnClickListener;
 import android.net.Uri;
+import android.provider.ContactsContract.Contacts;
+import android.provider.ContactsContract.CommonDataKinds.Email;
+import android.widget.Toast;
 
 public class MainActivity extends SherlockActivity implements OnClickListener
 {
@@ -70,31 +77,58 @@ public class MainActivity extends SherlockActivity implements OnClickListener
                 break;
         }
     }
-   public void doLaunchContactPicker(View view) {
-       Intent intent5;
-       intent5 = new Intent(this, MyContactsActivity.class);
-       startActivity(intent5);
- /*}
- @Override
-   public void onActivityResult(int reqCode, int resultCode, Intent data) {
-       super.onActivityResult(reqCode, resultCode, data);
+    public static final String DEBUG_TAG = null;
+    private static final int CONTACT_PICKER_RESULT = 1001;
 
-     switch (reqCode) {
-          case (PICK_CONTACT) :
-             if (resultCode == Activity.RESULT_OK) {
-                  Uri contactData = data.getData();
-                   Cursor c =  getContentResolver().query(contactData, null, null, null, null);
-                if (c.moveToFirst()) {
-                     String name = c.getString(c.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
-                        //TODO Whatever you want to do with the selected contact name.
-                  }
-               }
-               break;
-      }
-   }
-*/
-   }
-   // string sum;
+       public void doLaunchContactPicker(View view) {
+           Intent contactPickerIntent = new Intent(Intent.ACTION_PICK,
+                   Contacts.CONTENT_URI);
+           startActivityForResult(contactPickerIntent, CONTACT_PICKER_RESULT);
+       }
+    //copied :P
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode == RESULT_OK) {
+            switch (requestCode) {
+                case CONTACT_PICKER_RESULT:
+                    Cursor cursor = null;
+                    String phone = "";
+                    try {
+                        Uri result = data.getData();
+                        Log.v(DEBUG_TAG, "Got a contact result: " + result.toString());
+                        // get the contact id from the Uri
+                        String id = result.getLastPathSegment();
+                        // query for everything email
+                        cursor = getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI,null, ContactsContract.CommonDataKinds.Phone.CONTACT_ID + "=?", new String[] { id },
+                                null);
+                        int phoneIdx = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DATA);
+                        // let's just get the first email
+                        if (cursor.moveToFirst()) {
+                            phone = cursor.getString(phoneIdx);
+                            Log.v(DEBUG_TAG, "Got phone no. : " + phone);
+                        } else {
+                            Log.w(DEBUG_TAG, "No results");
+                        }
+                    } catch (Exception e) {
+                        Log.e(DEBUG_TAG, "Failed to get number", e);
+                    } finally {
+                        if (cursor != null) {
+                            cursor.close();
+                        }
+                        EditText emailEntry = (EditText) findViewById(R.id.edit_message);
+                        emailEntry.setText(phone);
+                        if (phone.length() == 0) {
+                            Toast.makeText(this, "No number found for contact.",
+                                    Toast.LENGTH_LONG).show();
+                        }
+                    }
+                    break;
+            }
+        } else {
+            Log.w(DEBUG_TAG, "Warning: activity result not ok");
+        }
+    }
+    // string sum;
    private String add="";
   public void star(View view){
         EditText text = (EditText) findViewById(R.id.edit_message);

@@ -3,7 +3,7 @@
 
     <string name="app_name" >Simple Dialer
     </string>
-    <string name="action_settings" >Settings
+    <string name="action_settings" >Search
     </string>
     <string name="edit_message">Enter a number
     </string>
@@ -13,7 +13,7 @@
     </string>
     <string name="title_activity_display_message">Number
     </string>
-    <string name="title_activity_message2">TROLLED
+    <string name="title_activity_message2">Help
     </string>
     <string name="title_activity_call">CALL
     </string>

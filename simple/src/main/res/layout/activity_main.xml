@@ -178,7 +178,7 @@
             <Button
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
-                    android:text="Surprise"
+                    android:text="Help"
                     android:onClick="sendMessage1" android:textStyle="bold"
                     android:id="@+id/button2"
                     android:background="@drawable/abs__btn_cab_done_focused_holo_light"

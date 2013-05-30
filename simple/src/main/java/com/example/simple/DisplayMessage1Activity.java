@@ -4,9 +4,7 @@ import android.os.Bundle;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 
-/**
- * Created by Sanket on 5/22/13.
- */
+
 public class DisplayMessage1Activity extends MainActivity {
 
     @Override
