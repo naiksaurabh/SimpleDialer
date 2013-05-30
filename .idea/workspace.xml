@@ -23,20 +23,7 @@
     </layouts>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b224f72-698b-49df-8c03-090f8c9c84ad" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Documents and Settings\Sanket\My Documents\GitHub\SimpleDialer\simple\src\main\java\com\example\simple\MyContactsActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\Sanket\My Documents\GitHub\SimpleDialer\simple\src\main\res\layout\message2.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple/src/main/res/drawable-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/src/main/res/drawable-hdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple/src/main/res/drawable-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/src/main/res/drawable-xhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple/src/main/res/drawable-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/simple/src/main/res/drawable-xxhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/simple/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple/src/main/java/com/example/simple/DisplayMessage1Activity.java" afterPath="$PROJECT_DIR$/simple/src/main/java/com/example/simple/DisplayMessage1Activity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple/src/main/java/com/example/simple/MainActivity.java" afterPath="$PROJECT_DIR$/simple/src/main/java/com/example/simple/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/simple/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple/src/main/res/layout/message1.xml" afterPath="$PROJECT_DIR$/simple/src/main/res/layout/message1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/simple/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="4b224f72-698b-49df-8c03-090f8c9c84ad" name="Default" comment="" />
     <ignored path="SimpleDialer.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="4b224f72-698b-49df-8c03-090f8c9c84ad" time="1369884118328" ignored="false" />
@@ -104,15 +91,7 @@
     <favorites_list name="SimpleDialer" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ic_launcher.png" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/simple/src/main/res/drawable-mdpi/ic_launcher.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -225,26 +204,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="SimpleDialer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleDialer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleDialer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -463,12 +422,12 @@
       <workItem from="1369851150078" duration="1374000" />
       <workItem from="1369879014843" duration="752000" />
       <workItem from="1369881779046" duration="2247000" />
-      <workItem from="1369884101718" duration="11054000" />
+      <workItem from="1369884101718" duration="11477000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24882000" />
+    <option name="totallyTimeSpent" value="25305000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -492,7 +451,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1288" height="694" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.68207026" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="96" y="96" width="1088" height="494" />
@@ -511,8 +470,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.6709797" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24635333" sideWeight="0.68207026" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31792977" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24635333" sideWeight="0.68207026" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31792977" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
