@@ -26,7 +26,7 @@
     <list default="true" id="4b224f72-698b-49df-8c03-090f8c9c84ad" name="Default" comment="" />
     <ignored path="SimpleDialer.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4b224f72-698b-49df-8c03-090f8c9c84ad" time="1369884118328" ignored="false" />
+    <file path="/Dummy.txt" changelist="4b224f72-698b-49df-8c03-090f8c9c84ad" time="1369898568765" ignored="false" />
     <file path="/fragment.java" changelist="4b224f72-698b-49df-8c03-090f8c9c84ad" time="1369386819187" ignored="false" />
     <file path="/activity_main.xml" changelist="4b224f72-698b-49df-8c03-090f8c9c84ad" time="1369895528156" ignored="false" />
     <file path="/MainActivity.java" changelist="4b224f72-698b-49df-8c03-090f8c9c84ad" time="1369895361671" ignored="false" />
@@ -196,8 +196,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -208,6 +206,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -225,11 +225,11 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="k" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -240,24 +240,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Android Application.main">
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <method />
-    </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -278,6 +260,24 @@
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -423,11 +423,12 @@
       <workItem from="1369879014843" duration="752000" />
       <workItem from="1369881779046" duration="2247000" />
       <workItem from="1369884101718" duration="11477000" />
+      <workItem from="1369898541468" duration="74000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25305000" />
+    <option name="totallyTimeSpent" value="25379000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -453,11 +454,7 @@
     <frame x="-4" y="-4" width="1288" height="694" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.68207026" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="96" y="96" width="1088" height="494" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.68207026" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32532346" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32142857" sideWeight="0.6709797" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902032" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -472,11 +469,15 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24635333" sideWeight="0.68207026" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31792977" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.68207026" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="96" y="96" width="1088" height="494" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.68207026" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32142857" sideWeight="0.6709797" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -553,16 +554,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/simple/src/main/res/menu/main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="7" selection-start="322" selection-end="322" vertical-scroll-proportion="0.40117994">
-          <folding />
-        </state>
+        <state line="8" column="7" selection-start="322" selection-end="322" vertical-scroll-proportion="0.40117994" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simple/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="73" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="7" column="73" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/device-2013-05-30-102019.png">
@@ -579,25 +576,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/simple/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="47" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="15" column="47" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simple/src/main/java/com/example/simple/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="15" selection-start="2944" selection-end="2944" vertical-scroll-proportion="1.7515152">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="87" column="15" selection-start="2944" selection-end="2944" vertical-scroll-proportion="1.7515152" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simple/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="55" selection-start="8320" selection-end="8320" vertical-scroll-proportion="0.13114753">
-          <folding />
-        </state>
+        <state line="178" column="55" selection-start="8320" selection-end="8320" vertical-scroll-proportion="0.13114753" />
       </provider>
       <provider editor-type-id="android-designer">
         <state />
@@ -605,16 +594,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/simple/src/main/java/com/example/simple/DisplayMessage1Activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="158" selection-end="158" vertical-scroll-proportion="0.24781342">
-          <folding />
-        </state>
+        <state line="7" column="13" selection-start="158" selection-end="158" vertical-scroll-proportion="0.24781342" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simple/src/main/res/layout/message1.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="49" selection-start="527" selection-end="527" vertical-scroll-proportion="0.3207547">
-          <folding />
-        </state>
+        <state line="9" column="49" selection-start="527" selection-end="527" vertical-scroll-proportion="0.3207547" />
       </provider>
       <provider editor-type-id="android-designer">
         <state />
@@ -622,11 +607,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/simple/src/main/java/com/example/simple/DisplayMessageActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="33" selection-start="641" selection-end="641" vertical-scroll-proportion="1.0408163">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="21" column="33" selection-start="641" selection-end="641" vertical-scroll-proportion="1.0408163" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simple/src/main/res/drawable-mdpi/ic_launcher.png">
