@@ -79,10 +79,15 @@ public class MainActivity extends SherlockActivity implements OnClickListener
 
 
     private void phoneCall()
-    {   EditText editText1;
+    {   String message1;
+        String phoneCallUri;
+        if(add1.equals(""))
+        {EditText editText1;
         editText1 = (EditText) findViewById(R.id.edit_message);
-        String message1 = "tel:"+ editText1.getText().toString();
-        String phoneCallUri = message1;
+         message1 = editText1.getText().toString();
+         }
+        else{message1=add;}
+        phoneCallUri = "tel:"+ message1;
         Intent phoneCallIntent = new Intent(Intent.ACTION_CALL);
         phoneCallIntent.setData(Uri.parse(phoneCallUri));
         startActivity(phoneCallIntent);
@@ -151,7 +156,7 @@ public class MainActivity extends SherlockActivity implements OnClickListener
         }
     }
     // string sum;
-   private String add="";
+   private String add="";private String add1="";
   public void star(View view){
         EditText text = (EditText) findViewById(R.id.edit_message);
       add=add+"*";
@@ -162,8 +167,11 @@ public class MainActivity extends SherlockActivity implements OnClickListener
         text.setText(add);
     }
     public void hash(View view) {   EditText text = (EditText) findViewById(R.id.edit_message);
-        add=add+"#";
-        text.setText(add);
+        String encodedHash = Uri.encode("#");
+
+        add1=add+"#";
+        add=add+encodedHash;
+        text.setText(add1);
     }
     public void one(View view) {   EditText text = (EditText) findViewById(R.id.edit_message);
         add=add+"1";

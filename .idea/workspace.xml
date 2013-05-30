@@ -25,7 +25,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4b224f72-698b-49df-8c03-090f8c9c84ad" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple/src/main/java/com/example/simple/MainActivity.java" afterPath="$PROJECT_DIR$/simple/src/main/java/com/example/simple/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple/src/main/res/menu/main.xml" afterPath="$PROJECT_DIR$/simple/src/main/res/menu/main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SimpleDialer.iws" />
@@ -33,7 +32,7 @@
     <file path="/Dummy.txt" changelist="4b224f72-698b-49df-8c03-090f8c9c84ad" time="1369899813468" ignored="false" />
     <file path="/fragment.java" changelist="4b224f72-698b-49df-8c03-090f8c9c84ad" time="1369386819187" ignored="false" />
     <file path="/activity_main.xml" changelist="4b224f72-698b-49df-8c03-090f8c9c84ad" time="1369895528156" ignored="false" />
-    <file path="/MainActivity.java" changelist="4b224f72-698b-49df-8c03-090f8c9c84ad" time="1369905922046" ignored="false" />
+    <file path="/MainActivity.java" changelist="4b224f72-698b-49df-8c03-090f8c9c84ad" time="1369909550468" ignored="false" />
     <file path="/strings.xml" changelist="4b224f72-698b-49df-8c03-090f8c9c84ad" time="1369895504781" ignored="false" />
     <file path="/message1.xml" changelist="4b224f72-698b-49df-8c03-090f8c9c84ad" time="1369895436640" ignored="false" />
     <file path="/main.xml" changelist="4b224f72-698b-49df-8c03-090f8c9c84ad" time="1369904248671" ignored="false" />
@@ -111,8 +110,10 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/simple/src/main/java/com/example/simple/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="47" selection-start="287" selection-end="287" vertical-scroll-proportion="-0.056478404">
-              <folding />
+            <state line="86" column="51" selection-start="2872" selection-end="2872" vertical-scroll-proportion="0.38870433">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -580,12 +581,12 @@
       <workItem from="1369881779046" duration="2247000" />
       <workItem from="1369884101718" duration="11477000" />
       <workItem from="1369898541468" duration="151000" />
-      <workItem from="1369899813140" duration="5727000" />
+      <workItem from="1369899813140" duration="9089000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31183000" />
+    <option name="totallyTimeSpent" value="34545000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -781,8 +782,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/simple/src/main/java/com/example/simple/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="47" selection-start="287" selection-end="287" vertical-scroll-proportion="-0.056478404">
-          <folding />
+        <state line="86" column="51" selection-start="2872" selection-end="2872" vertical-scroll-proportion="0.38870433">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
