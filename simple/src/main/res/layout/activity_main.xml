@@ -12,9 +12,14 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:background="@android:color/black">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="60dp"
+            >
         <EditText
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="fill_parent"
              android:id="@+id/edit_message"
                android:clickable="false"
                 android:cursorVisible="false"
@@ -22,7 +27,19 @@
                 android:focusableInTouchMode="false"
                 android:hint="@string/edit_message"
                 android:background="@color/abs__background_holo_light"
-                style="@style/TextAppearance.Sherlock.Light.Widget.PopupMenu.Large"/>
+                style="@style/TextAppearance.Sherlock.Light.Widget.PopupMenu.Large"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_weight="10"/>
+        <Button
+                android:layout_width="70dp"
+                android:layout_height="fill_parent"
+                android:text="    C    "
+                android:onClick="cancel"
+                android:textColor="#ffffff"
+                android:background="@drawable/abs__menu_dropdown_panel_holo_dark"
+                />
+    </LinearLayout>
 
         <Button
                 android:layout_width="110dp"
@@ -31,22 +48,17 @@
                 android:onClick="sendMessage"
                 android:textStyle="bold"
                 android:id="@+id/button"
-                android:background="@drawable/abs__btn_cab_done_focused_holo_light" android:layout_gravity="left|center_vertical"
+                android:layout_gravity="left|center_vertical"
                 android:layout_marginTop="@dimen/activity_horizontal_margin"
                 android:layout_marginBottom="@dimen/activity_horizontal_margin"
                 android:textColor="#ffffff"/>
-
-        <ProgressBar
-                style="@style/Widget.Sherlock.ProgressBar"
-                android:layout_width="fill_parent"
-                android:layout_height="101dp"
-                android:id="@+id/progressBar"/>
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                       android:orientation="horizontal"
                       android:layout_width="fill_parent"
                       android:layout_height="wrap_content"
-                >
+                      android:divider="@color/abs__background_holo_light"
+                      android:layout_marginTop="40dp">
 
 
 
@@ -56,21 +68,24 @@
                     android:text="      1      "
                     android:onClick="one"
                     android:textColor="#ffffff"
-                    android:background="@drawable/abs__menu_dropdown_panel_holo_dark"/>
+                    android:background="@drawable/abs__menu_dropdown_panel_holo_dark"
+                    android:layout_weight="7"/>
             <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="      2      "
                     android:onClick="two"
                     android:textColor="#ffffff"
-                    android:background="@drawable/abs__menu_dropdown_panel_holo_dark"/>
+                    android:background="@drawable/abs__menu_dropdown_panel_holo_dark"
+                    android:layout_weight="7"/>
             <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="      3      "
                     android:onClick="three"
                     android:textColor="#ffffff"
-                    android:background="@drawable/abs__menu_dropdown_panel_holo_dark"/>
+                    android:background="@drawable/abs__menu_dropdown_panel_holo_dark"
+                    android:layout_weight="7"/>
 
         </LinearLayout>
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -84,21 +99,24 @@
                     android:text="      4      "
                     android:onClick="four"
                     android:textColor="#ffffff"
-                    android:background="@drawable/abs__menu_dropdown_panel_holo_dark"/>
+                    android:background="@drawable/abs__menu_dropdown_panel_holo_dark"
+                    android:layout_weight="7"/>
             <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="      5      "
                     android:onClick="five"
                     android:textColor="#ffffff"
-                    android:background="@drawable/abs__menu_dropdown_panel_holo_dark"/>
+                    android:background="@drawable/abs__menu_dropdown_panel_holo_dark"
+                    android:layout_weight="7"/>
             <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="      6      "
                     android:onClick="six"
                     android:textColor="#ffffff"
-                    android:background="@drawable/abs__menu_dropdown_panel_holo_dark"/>
+                    android:background="@drawable/abs__menu_dropdown_panel_holo_dark"
+                    android:layout_weight="7"/>
 
         </LinearLayout>
 
@@ -115,21 +133,24 @@
                     android:text="      7      "
                     android:onClick="seven"
                     android:textColor="#ffffff"
-                    android:background="@drawable/abs__menu_dropdown_panel_holo_dark"/>
+                    android:background="@drawable/abs__menu_dropdown_panel_holo_dark"
+                    android:layout_weight="7"/>
             <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="      8      "
                     android:onClick="eight"
                     android:textColor="#ffffff"
-                    android:background="@drawable/abs__menu_dropdown_panel_holo_dark"/>
+                    android:background="@drawable/abs__menu_dropdown_panel_holo_dark"
+                    android:layout_weight="7"/>
             <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="      9      "
                     android:onClick="nine"
                     android:textColor="#ffffff"
-                    android:background="@drawable/abs__menu_dropdown_panel_holo_dark"/>
+                    android:background="@drawable/abs__menu_dropdown_panel_holo_dark"
+                    android:layout_weight="7"/>
 
         </LinearLayout>
 
@@ -143,31 +164,28 @@
             <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="      *      "
+                    android:text="       *      "
                     android:onClick="star"
                     android:textColor="#ffffff"
-                    android:background="@drawable/abs__menu_dropdown_panel_holo_dark"/>
+                    android:background="@drawable/abs__menu_dropdown_panel_holo_dark"
+                    android:layout_weight="7"/>
             <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="      0      "
                     android:onClick="zero"
                     android:textColor="#ffffff"
-                    android:background="@drawable/abs__menu_dropdown_panel_holo_dark"/>
+                    android:background="@drawable/abs__menu_dropdown_panel_holo_dark"
+                    android:layout_weight="7"/>
             <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="      #      "
                     android:onClick="hash"
                     android:textColor="#ffffff"
-                    android:background="@drawable/abs__menu_dropdown_panel_holo_dark"/>
-            <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:text="    C    "
-                    android:onClick="cancel"
-                    android:textColor="#ffffff"
-                    android:background="@drawable/abs__menu_dropdown_panel_holo_dark"/>
+                    android:background="@drawable/abs__menu_dropdown_panel_holo_dark"
+                    android:layout_weight="7"/>
+
 
         </LinearLayout>
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -185,7 +203,8 @@
                     android:layout_marginRight="@dimen/activity_vertical_margin"
                     android:layout_marginTop="@dimen/activity_horizontal_margin"
                     android:focusable="false"
-                    android:textColor="#ffffff"/>
+                    android:textColor="#ffffff"
+                    android:layout_weight="7"/>
             <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -194,7 +213,7 @@
                     android:onClick="doLaunchContactPicker"
                     android:textStyle="bold"
                     android:background="@drawable/abs__btn_cab_done_focused_holo_light"
-                    android:layout_marginTop="@dimen/activity_horizontal_margin" android:layout_weight="0.66"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin" android:layout_weight="7"
                     android:layout_marginRight="@dimen/activity_horizontal_margin" android:visibility="visible"
                     android:focusable="false"
                     android:textColor="#ffffff"/>
@@ -206,7 +225,8 @@
                     android:textStyle="bold"
                     android:background="@drawable/abs__btn_cab_done_focused_holo_light"
                     android:layout_marginTop="@dimen/activity_horizontal_margin"
-                    android:textColor="#ffffff"/>
+                    android:textColor="#ffffff"
+                    android:layout_weight="7"/>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
