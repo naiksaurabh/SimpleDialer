@@ -3,11 +3,14 @@ package com.example.simple;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+
+import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
 import android.provider.ContactsContract;
+import android.support.v4.app.NavUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
@@ -22,6 +25,7 @@ public class MainActivity extends SherlockActivity implements OnClickListener
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -45,6 +49,9 @@ public class MainActivity extends SherlockActivity implements OnClickListener
         Toast.makeText(MainActivity.this, "Search Contacts", Toast.LENGTH_SHORT).show();
         doLaunchContactPicker();
         return true;
+        case android.R.id.home:
+            NavUtils.navigateUpFromSameTask(this);
+            return true;
         default:
             return super.onOptionsItemSelected(item);
     }
@@ -82,13 +89,23 @@ public class MainActivity extends SherlockActivity implements OnClickListener
         {EditText editText1;
         editText1 = (EditText) findViewById(R.id.edit_message);
          message1 = editText1.getText().toString();
-         }
+                    }
         else{message1=add;}
+        undo();
         phoneCallUri = "tel:"+ message1;
         Intent phoneCallIntent = new Intent(Intent.ACTION_CALL);
         phoneCallIntent.setData(Uri.parse(phoneCallUri));
         startActivity(phoneCallIntent);
     }
+
+    private void undo() {
+        EditText text = (EditText) findViewById(R.id.edit_message);
+        add="";
+        add1="";
+        text.setText(add);
+    }
+
+
     @Override
     public void onClick(View v) {
         // TODO Auto-generated method stub
@@ -165,7 +182,6 @@ public class MainActivity extends SherlockActivity implements OnClickListener
     }
     public void hash(View view) {   EditText text = (EditText) findViewById(R.id.edit_message);
         String encodedHash = Uri.encode("#");
-
         add1=add+"#";
         add=add+encodedHash;
         text.setText(add1);
@@ -209,10 +225,15 @@ public class MainActivity extends SherlockActivity implements OnClickListener
     public void cancel(View view) {   EditText text = (EditText) findViewById(R.id.edit_message);
         if(add.equals(""))
         {text.setText(add);}
-        else
+        else if (add1.equals(""))
         {
         add=add.substring(0,add.length()-1);
         text.setText(add);}
+        else
+        {add=add.substring(0,add.length()-3);
+            text.setText(add);
+            add1="";
+    }
     }
 
     }
