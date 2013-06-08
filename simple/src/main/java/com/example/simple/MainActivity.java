@@ -3,6 +3,7 @@ package com.example.simple;
 
 import android.content.ComponentName;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.os.Bundle;
 
@@ -116,7 +117,7 @@ public class MainActivity extends SherlockActivity implements OnClickListener, V
 
     @Override
     public void onClick(View v) {
-        // TODO Auto-generated method stub
+
         switch(v.getId())
         {
             case R.id.btnCall:
@@ -132,12 +133,19 @@ public class MainActivity extends SherlockActivity implements OnClickListener, V
 
     @Override
     public boolean onLongClick(View v) {
-        // TODO Auto-generated method stub
+
         Intent intent = new Intent();
-        intent.setComponent(new ComponentName("com.android.settings","com.android.settings.gemini.SimManagement"));
-        Toast.makeText(this, "Select SIM", Toast.LENGTH_LONG).show();
-        startActivity(intent);
-        return true;
+      intent.setComponent(new ComponentName("com.android.settings","com.android.settings.gemini.SimManagement"));
+        if(getPackageManager().resolveActivity(intent, PackageManager.MATCH_DEFAULT_ONLY) != null) {
+
+            intent.setComponent(new ComponentName("com.android.settings","com.android.settings.gemini.SimManagement"));
+            Toast.makeText(this, "Select SIM", Toast.LENGTH_LONG).show();
+            startActivity(intent);
+
+        }
+        else
+        {Toast.makeText(this, "Do not long press", Toast.LENGTH_LONG).show();}
+                 return true;
     }
 
 
