@@ -1,15 +1,18 @@
 package com.example.simple;
 
+
+import android.content.ComponentName;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 
-import com.actionbarsherlock.app.ActionBar;
+
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
 import android.provider.ContactsContract;
+import android.provider.Settings;
 import android.support.v4.app.NavUtils;
 import android.util.Log;
 import android.view.View;
@@ -19,8 +22,7 @@ import android.net.Uri;
 import android.provider.ContactsContract.Contacts;
 import android.widget.Toast;
 
-public class MainActivity extends SherlockActivity implements OnClickListener
-{
+public class MainActivity extends SherlockActivity implements OnClickListener, View.OnLongClickListener {
     public final static String EXTRA_MESSAGE = "com.example.simple.MESSAGE";
 
     @Override
@@ -31,6 +33,8 @@ public class MainActivity extends SherlockActivity implements OnClickListener
 
         View callButton = findViewById(R.id.btnCall);
         callButton.setOnClickListener(this);
+        callButton.setOnLongClickListener(this);
+
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -46,6 +50,7 @@ public class MainActivity extends SherlockActivity implements OnClickListener
         finish();
         return true;
     case R.id.action_settings:
+        onSearchRequested();
         Toast.makeText(MainActivity.this, "Search Contacts", Toast.LENGTH_SHORT).show();
         doLaunchContactPicker();
         return true;
@@ -55,12 +60,15 @@ public class MainActivity extends SherlockActivity implements OnClickListener
         default:
             return super.onOptionsItemSelected(item);
     }
+
     }
 
     private void doLaunchContactPicker() { Intent contactPickerIntent = new Intent(Intent.ACTION_PICK,
             Contacts.CONTENT_URI);
+
         startActivityForResult(contactPickerIntent, CONTACT_PICKER_RESULT);
     }
+
 
 
     /** Called when the user clicks the Send button */
@@ -118,6 +126,22 @@ public class MainActivity extends SherlockActivity implements OnClickListener
                 break;
         }
     }
+
+
+
+
+    @Override
+    public boolean onLongClick(View v) {
+        // TODO Auto-generated method stub
+        Intent intent = new Intent();
+        intent.setComponent(new ComponentName("com.android.settings","com.android.settings.gemini.SimManagement"));
+        Toast.makeText(this, "Select SIM", Toast.LENGTH_LONG).show();
+        startActivity(intent);
+        return true;
+    }
+
+
+
     public static final String DEBUG_TAG = null;
     private static final int CONTACT_PICKER_RESULT = 1001;
 
@@ -235,7 +259,6 @@ public class MainActivity extends SherlockActivity implements OnClickListener
             add1="";
     }
     }
-
     }
 
 
